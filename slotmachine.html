@@ -1,0 +1,98 @@
+<head>
+  <title>slotmachine</title>
+</head>
+
+<body>
+  <h1>Slot Machine</h1>
+  <img src = "http://i.imgur.com/uHYrtv8.jpg">
+
+  {{> home}}
+
+</body>
+
+<template name = "home">
+  {{#if showMainPage}}
+
+    {{> infoPage}} 
+
+  {{else}}
+
+    {{> mainApp}}
+
+  {{/if}}
+</template>
+
+<template name = "infoPage">
+  <div id="infoContainer">
+   <h2>Info</h2>
+    <h3>More info on how this was created coming soon!</h3>
+    <button type="button" id="goHome">Play the Slots!</button>
+  </div>
+</template>
+
+<template name = "mainApp">
+  <table>
+    <tr>
+      <th>
+        Forms of birth control you use(d): 
+      </th>
+      <th>
+        Number of times you had or will have sex*:
+      </th>
+      <th>
+        You have a:
+      </th>
+    </tr>
+    <tr>
+      <td>
+        {{> contraception}}
+      </td>
+      <td>
+        {{> numSex}}
+        
+      </td>
+      <td>
+        {{> riskDisplay}}
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><h5>* defined as vaginal intercourse between a female (age 18-49) and a fertile male partner (<a id="goInfo" href="#">Click here for more information</a>)</h5></td>
+      <td></td>
+    </tr>
+  </table>
+</template>
+
+<template name = "contraception">
+    <div id="contraceptionContainer">
+      {{#each bcTypes}}
+        <input type="checkbox" class="contraceptionOption" name="contraception" value={{this}} />{{this}}<br>
+      {{/each}}
+    </div>
+</template>
+
+
+<template name = "numSex">
+    <div id="numSexContainer">
+     <input id="numSex" type = "text" name = "numSex" value= "" maxlength="3" autocomplete="off" autofocus="autofocus">
+    </div>
+</template>
+
+<template name = "riskDisplay">
+  
+    <div id="displayRiskContainer">
+
+        <div id="displayRisk">
+
+          <div id="displayRiskPercentage" style="color: #{{textColor}}; font-size: {{textSize}}px;">
+            {{chancePercent}}%
+          </div>
+
+          <h3 id="bottomTitle">chance of pregnancy using {{strContraceptives}}</h3>
+
+        </div>
+    </div>
+
+  
+</template>
+

@@ -1,0 +1,98 @@
+/* CSS declarations go here */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-style: italic;
+}
+
+h3 {
+	clear: all;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+table {
+	margin: auto;
+}
+
+h5 {
+	margin-top: 0px;
+}
+
+td {
+	width: 30%;
+}
+
+#displayForm{
+	float: left;
+	
+}
+
+
+#infoContainer {
+	display: block;
+	text-align: center;
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#contraceptionContainer {
+	margin: auto;
+	width: 192px;
+	margin-top: 8px;
+}
+
+#numSexContainer {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#numSex {
+	width: 192px;
+	font-size: 84px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#displayRiskContainer {
+	text-align: center;
+}
+
+#displayRisk{
+	height: 200px;
+	padding: 16px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#displayRiskPercentage {
+	margin-top: 24px;
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+	font-weight: bold;
+	font-size: 84px;
+}
+
+#topTitle {
+	text-align: left;
+}
+
+#bottomTitle {
+	text-align: center;
+}
